@@ -1,0 +1,2 @@
+# ShopEasy – E-Commerce Website
+ShopEasy is an online shopping website developed to provide users with a convenient and user-friendly shopping experience. It allows users to browse products, view product details, add or remove items from the shopping cart, and manage their orders. The website also includes user registration, login, cart management, and order history features. It is designed with a responsive and attractive interface to make online shopping simple and efficient.
