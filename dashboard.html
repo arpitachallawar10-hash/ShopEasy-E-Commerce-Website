@@ -1,0 +1,86 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Dashboard | ShopEasy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <!-- Dashboard Navigation -->
+    <header class="header">
+        <a href="dashboard.html" class="logo">🛍️ ShopEasy</a>
+
+        <nav class="navbar">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="#products">Shop Products</a>
+            <a href="cart.html">
+                Cart (<span id="cart-count">0</span>)
+            </a>
+            <a href="index.html">Home</a>
+            <a href="#" id="logout-button" class="register-link">
+                Logout
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-tag">WELCOME TO SHOPEASY</p>
+
+                <h1>Your Shopping<br><span>Dashboard.</span></h1>
+
+                <p class="hero-description">
+                    Explore amazing products, discover your favorites,
+                    and shop at affordable prices.
+                </p>
+
+                <a href="#products" class="shop-button">
+                    Start Shopping →
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-circle">🛍️</div>
+                <div class="floating-card">
+                    <span>✨</span>
+                    <div>
+                        <strong>Happy Shopping!</strong>
+                        <p>Your favorites are waiting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <p class="section-tag">SHOP YOUR FAVORITES</p>
+                <h2>Available Products</h2>
+                <p class="section-description">
+                    Choose your products and add them to your cart.
+                </p>
+            </div>
+
+            <div id="products-list" class="products-grid">
+                <p class="loading-message">Loading products...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="dashboard.html" class="footer-logo">🛍️ ShopEasy</a>
+        <p>Your everyday shopping destination.</p>
+        <p class="copyright">© 2026 ShopEasy | Happy Shopping!</p>
+    </footer>
+
+</body>
+</html>
+```

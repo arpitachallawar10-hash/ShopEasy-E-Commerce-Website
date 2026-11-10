@@ -1,0 +1,91 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | ShopEasy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">🛍️ ShopEasy</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="register-link active">
+                Register
+            </a>
+        </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <main class="form-container">
+
+        <h1>Create Your Account</h1>
+
+        <p>Join ShopEasy and start shopping today!</p>
+
+        <form id="register-form">
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                autocomplete="new-password"
+                minlength="6"
+                required
+            >
+
+            <button type="submit">Create Account</button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="login.html">Login here</a>
+        </p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="index.html" class="footer-logo">🛍️ ShopEasy</a>
+        <p>Making online shopping simple and enjoyable.</p>
+        <p class="copyright">© 2026 ShopEasy | Happy Shopping!</p>
+    </footer>
+
+</body>
+</html>
+```

@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy | Online Shopping</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+    <section class="hero"></section>
+
+    <!-- Connect JavaScript -->
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            🛍️ ShopEasy
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="cart.html">
+                Cart (<span id="cart-count">0</span>)
+            </a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="register-link">Register</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-tag">
+                    YOUR EVERYDAY SHOPPING DESTINATION
+                </p>
+
+                <h1>
+                    Discover Products<br>
+                    You’ll <span>Love.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover amazing products at affordable prices.
+                    Find your favorites and enjoy shopping!
+                </p>
+
+                <a href="#products" class="shop-button">
+                    Shop Now →
+                </a>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="hero-circle">
+                    🛍️
+                </div>
+
+                <div class="floating-card">
+
+                    <span>✨</span>
+
+                    <div>
+                        <strong>Happy Shopping!</strong>
+                        <p>Great products, great prices</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED PRODUCTS SECTION -->
+        <section class="products-section" id="products">
+
+            <div class="section-heading">
+
+                <p class="section-tag">
+                    OUR COLLECTION
+                </p>
+
+                <h2>Featured Products</h2>
+
+                <p class="section-description">
+                    Explore our handpicked products just for you.
+                </p>
+
+            </div>
+
+
+            <!-- Products Container -->
+            <div id="products-list" class="products-grid">
+
+                <!-- Product 1 -->
+                <article class="product-card">
+
+                    <img
+                        src="img/image.png" alt="T-Shirt"
+                        alt="T-Shirt"
+                    >
+
+                    <h3>T-Shirt</h3>
+
+                    <p>Comfortable cotton T-shirt.</p>
+
+                    <span class="price">₹499.00</span>
+
+                    <button type="button" disabled>
+                        Loading...
+                    </button>
+
+                </article>
+
+
+                <!-- Product 2 -->
+                <article class="product-card">
+
+                    <img
+                        src="https://placehold.co/400x280/eaf2ff/2874f0?text=Headphones"
+                        alt="Wireless Headphones"
+                    >
+
+                    <h3>Wireless Headphones</h3>
+
+                    <p>Enjoy your favorite music.</p>
+
+                    <span class="price">₹1,499.00</span>
+
+                    <button type="button" disabled>
+                        Loading...
+                    </button>
+
+                </article>
+
+
+                <!-- Product 3 -->
+                <article class="product-card">
+
+                    <img
+                        src="https://placehold.co/400x280/eaf2ff/2874f0?text=Smartwatch"
+                        alt="Smart Watch"
+                    >
+
+                    <h3>Smart Watch</h3>
+
+                    <p>Stay connected every day.</p>
+
+                    <span class="price">₹2,499.00</span>
+
+                    <button type="button" disabled>
+                        Loading...
+                    </button>
+
+                </article>
+
+
+                <!-- Product 4 -->
+                <article class="product-card">
+
+                    <img
+                        src="https://placehold.co/400x280/eaf2ff/2874f0?text=Shoes"
+                        alt="Stylish Shoes"
+                    >
+
+                    <h3>Stylish Shoes</h3>
+
+                    <p>Comfort for every step.</p>
+
+                    <span class="price">₹1,999.00</span>
+
+                    <button type="button" disabled>
+                        Loading...
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <a href="index.html" class="footer-logo">
+            🛍️ ShopEasy
+        </a>
+
+        <p>
+            Making online shopping simple and enjoyable.
+        </p>
+
+        <p class="copyright">
+            © 2026 ShopEasy | Happy Shopping!
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

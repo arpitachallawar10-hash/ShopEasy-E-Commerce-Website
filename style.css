@@ -1,0 +1,562 @@
+
+/* =====================================
+   1. GLOBAL STYLING
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2ff, #f3e8ff, #fff0f5);
+    color: #172337;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =====================================
+   2. NAVBAR
+===================================== */
+
+header {
+    background: linear-gradient(90deg, #2563eb, #6d28d9);
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h2,
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #fde047;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fde047;
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   3. MAIN CONTENT
+===================================== */
+
+main {
+    width: 90%;
+    max-width: 1300px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+section {
+    background: linear-gradient(135deg, #ffffff, #eff6ff);
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(80,70,180,0.08);
+}
+
+h1 {
+    color: #172554;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4c1d95;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #6d28d9;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+/* =====================================
+   4. HOMEPAGE HERO SECTION
+===================================== */
+
+.hero {
+    width: 90%;
+    margin: 40px auto;
+    padding: 65px 40px;
+    border-radius: 22px;
+    background: linear-gradient(
+        120deg,
+        #dbeafe,
+        #e9d5ff,
+        #fce7f3
+    );
+    box-shadow: 0 8px 25px rgba(80,70,180,0.12);
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.4;
+    color: #172554;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: #7c3aed;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #475569;
+    margin: 20px 0;
+}
+
+.hero h3 {
+    color: #7c3aed;
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.hero a {
+    display: inline-block;
+    background: linear-gradient(90deg, #2563eb, #9333ea);
+    color: white;
+    padding: 14px 32px;
+    margin: 15px 0;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero a:hover {
+    background: linear-gradient(90deg, #7c3aed, #db2777);
+    transform: translateY(-4px);
+}
+
+/* =====================================
+   5. BUTTONS
+===================================== */
+
+button,
+.btn {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+    padding: 13px 26px;
+    margin: 10px 8px 10px 0;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.btn:hover {
+    background: linear-gradient(90deg, #7c3aed, #db2777);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* =====================================
+   6. PRODUCT SECTION
+===================================== */
+
+.products,
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.product-card {
+    background: linear-gradient(145deg, #ffffff, #eff6ff);
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(37,99,235,0.10);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    background: linear-gradient(145deg, #dbeafe, #f3e8ff);
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(109,40,217,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 18px;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #475569;
+    font-size: 17px;
+}
+
+.product-card button {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+    border-radius: 25px;
+}
+
+/* =====================================
+   7. ALL IMAGES
+===================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =====================================
+   8. SHOPPING CART
+===================================== */
+
+#cart,
+.cart-container {
+    background: linear-gradient(135deg, #ffffff, #eff6ff);
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 18px;
+    background: #f8fafc;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.cart-item button {
+    margin: 5px;
+}
+
+#total,
+.total {
+    font-size: 23px;
+    font-weight: bold;
+    color: #4c1d95;
+    margin: 20px 0;
+}
+
+/* =====================================
+   9. ORDER HISTORY
+===================================== */
+
+#orders,
+.orders-container {
+    background: linear-gradient(135deg, #ffffff, #f3e8ff);
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.order-item {
+    background: #f8fafc;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #ddd6fe;
+    border-radius: 10px;
+}
+
+/* =====================================
+   10. LOGIN AND REGISTER
+===================================== */
+
+form {
+    max-width: 450px;
+    margin: 35px auto;
+    padding: 35px;
+    background: linear-gradient(135deg, #ffffff, #eff6ff);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(80,70,180,0.12);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 7px;
+    color: #334155;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 5px 0 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 6px rgba(124,58,237,0.25);
+}
+
+form button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* =====================================
+   11. SEARCH BAR
+===================================== */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    flex: 1;
+}
+
+/* =====================================
+   12. TABLES
+===================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+/* =====================================
+   13. FOOTER
+===================================== */
+
+footer {
+    background: linear-gradient(90deg, #172554, #4c1d95, #831843);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 45px;
+    font-size: 18px;
+}
+
+/* =====================================
+   14. DASHBOARD
+===================================== */
+
+.dashboard {
+    padding: 30px;
+    margin: 25px auto;
+    background: linear-gradient(135deg, #dbeafe, #f3e8ff);
+    border-radius: 15px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* =====================================
+   15. RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    main {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .hero {
+        width: 95%;
+        padding: 35px 22px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .products,
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product-card {
+        padding: 12px;
+    }
+
+    .product-card img {
+        height: 140px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        width: 95%;
+        padding: 22px;
+    }
+
+    button {
+        padding: 11px 18px;
+        font-size: 15px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+}
+
+/* =====================================
+   16. SMALL MOBILE SCREEN
+===================================== */
+
+@media (max-width: 400px) {
+
+    .products,
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+    .product-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+    padding: 10px;
+    border-radius: 12px;
+}
+}
+
